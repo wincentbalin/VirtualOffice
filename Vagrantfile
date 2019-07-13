@@ -5,7 +5,7 @@ Vagrant.configure("2") do |config|
   config.vbguest.auto_update = false
   config.vm.box = "ubuntu/bionic64"
   config.vm.network :private_network, ip: "192.168.33.7"
-  config.vm.network "forwarded_port", guest: 3389, host: 33389, protocol: "tcp"
+  config.vm.network "forwarded_port", guest: 3389, host: 33389, protocol: "tcp", auto_correct: true
   config.vm.synced_folder ".", "/home/vagrant/Documents"
   config.vm.provider "virtualbox" do |vb|
     vb.gui = false
