@@ -1,2 +1,9 @@
+# Vagrant artefacts
 .vagrant/
 ubuntu-bionic-18.04-cloudimg-console.log
+
+# Office documents
+**/*.odt
+**/*.ods
+**/*.docx
+**/*.xslx
